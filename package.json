@@ -1,0 +1,40 @@
+{
+  "name": "vue-webpack-generator",
+  "version": "0.0.1",
+  "description": "A vue webpack project",
+  "author": "yourname <youremail>",
+  "repository": {
+    "type": "git",
+    "url": "vue-webpack-generator.git"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --env.NODE_ENV=development --mode development --open --host 0.0.0.0",
+    "build": "webpack --env.NODE_ENV=production --mode production && nozomi -r dist",
+    "start": "npm run dev",
+    "skeleton-main": "skeleton -u http://127.0.0.1:8080/main -t src/pages/main/index.html",
+    "skeleton-sub": "skeleton -u http://127.0.0.1:8080/sub -t src/pages/sub/index.html"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@ali/nozomi-kit-tool": "*",
+    "autoprefixer": "8.3.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "0.28.10",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.0.6",
+    "node-sass": "4.8.3",
+    "path": "^0.12.7",
+    "postcss-px2rem": "0.3.0",
+    "sass-loader": "6.0.7",
+    "vue-loader": "14.2.2",
+    "vue-style-loader": "3.1.2",
+    "vue-template-compiler": "2.5.13",
+    "webpack": "4.1.1",
+    "webpack-cli": "2.0.10",
+    "webpack-dev-server": "3.1.0"
+  }
+}
